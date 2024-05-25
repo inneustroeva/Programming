@@ -169,6 +169,7 @@ void printSessions(const MovieSession* sessions, int count) { // указатель на ма
 }
 
 int main() {
+    setlocale(LC_ALL, "Russian");
     MovieSession* sessions = nullptr;
     int count = 0;
     const string filename = "database.txt"; // загрузка данных о сеансах из файла базы данных
